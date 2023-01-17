@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+</head>
+<body>
+  <!-- used in php like action.php -->
+  <form action="">
+    <!-- You need the name attitube so when the form is submitted they are placed together like
+    &firstname= -->
+    First Name: <input type="text" name="firstname"><br>
+    Last Name: <input type="text" name="lastname"><br>
+    Email: <input type="email" name="email" required><br>
+    Password: <input type="password" name="password" min="5"><br>
+    Birthday: <input type="date" name="birthday"><br>
+    Gender: <br>
+    <!-- Adding the name value tells all the radio that they belong together so you can only pick one -->
+    <input type="radio" name="gender">Male<br>
+    <input type="radio" name="gender">Female<br>
+    <input type="radio" name="gender">Other<br>
+    Pets: <br>
+    <input type="checkbox" name="cat"> Cats <br>
+    <input type="checkbox" name="dog"> Dogs <br>
+    <input type="checkbox"> Snake <br>
+    Cars: <br>
+    <select name="cars" id="">
+      <option value="volvo" name="volvo">volvo</option>
+      <option value="audi" name="audi">audi</option>
+      <option value="mazda" name="mazda">mazda</option>
+    </select><br>
+    <input type="submit" value="Register" name="" id="">
+    <!-- to reset the form -->
+    <input type="reset">
+
+    <!-- http://127.0.0.1:5500/forms.html
+      ?(the start of the query)
+      (property = value)
+      firstname=fake+name
+      (each query is seperated by &)
+      &lastname=kahe
+      &email=fake%40email.com
+      &password=1234%60
+      &birthday=2023-01-17
+      &gender=on
+      &cat=on -->
+
+    <!-- Had to add the cars name to get that responce -->
+    <!-- http://127.0.0.1:5500/forms.html
+      ?
+      firstname=jorge
+      &lastname=soto
+      &email=j%40w
+      &password=qwer
+      &birthday=2023-01-17
+      &gender=on
+      &dog=on
+      &cars=mazda -->
+  </form>
+</body>
+</html>
