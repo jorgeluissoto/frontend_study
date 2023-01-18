@@ -13,6 +13,13 @@ h2 {
 }
 p {
   color: pink;
+  text-decoration: underline;
+  text-transform: uppercase;
+  line-height: 20px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 80%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 li{
   list-style: none;
@@ -29,4 +36,19 @@ li{
 }
 #div2{
   background-color: rgba(175,0,255,0.5);
+}
+a{
+  color: white;
+}
+img{
+  float: right;
+}
+footer{
+  clear: both;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+.boxmodel{
+  border: 1px solid red;
 }
