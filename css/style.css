@@ -1,0 +1,20 @@
+/* Selector {
+  property: value;
+} */
+body {
+  background: url('https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/90/media/disneyparks_v0100/1/media/mediaplayer/homepage/mickey-minnie-16x9.jpg')no-repeat;
+}
+h2 {
+  color: #aa4139;
+  text-align: center;
+  border: 5px solid rgba(255,176,170,0.5);
+  cursor: pointer;
+  font-size: 70px;
+}
+p {
+  color: pink;
+}
+li{
+  list-style: none;
+  display: inline-block;
+}
